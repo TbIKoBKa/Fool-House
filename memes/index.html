@@ -56,10 +56,10 @@
             <img id="logo-second" src="src/images/mini-logo.svg" height=70 alt="logo">
 
             <nav id="nav" class="notlogged nav">
-                <a href="index.html">Головна</a>
-                <a href="news.html">Новини</a>
-                <a href="memes.html">Меми</a>
-                <a href="advice.html">Предложка</a>
+                <a href="../">Головна</a>
+                <a href="../news/">Новини</a>
+                <a href="./">Меми</a>
+                <a href="../advice/">Предложка</a>
                 <button id="login"><i class="fas fa-sign-in-alt"></i></button>
                 <button id="logout"><i class="fas fa-sign-out-alt"></i></button>
             </nav>
@@ -76,22 +76,69 @@
         <div class="container-main">
             <div class=content>
                 <div class="content-item">
-                    <section>
-                        <h1 class=title48>Предложка</h1>
-                        <form class="adviceform">
-                            <div class="form-item">
-                                <input placeholder="Ім'я" name="firstname" required>
-                                <input type="email" placeholder="Є-пошта" required>
-                                <input type="file" required>
+                    <h1 class=title48>Меми</h1>
+                    <div class="meme">
+                        <img class="meme-img" src="src/images/memes/leon_party.jpg" alt="meme">
+                        <p class="meme-title">Я вже збираюся йти, а ти?</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
                             </div>
-                            <div class="form-item">
-                                <textarea style="resize:none;" cols="50" rows="6" placeholder="Заголовок" required></textarea>
+                        </div>
+                    </div>
+                    <div class="meme">
+                        <img class="meme-img" src="src/images/memes/blm_git.jpg" alt="meme">
+                        <p class="meme-title">Black Olives Matter</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
                             </div>
-                            <div class="form-item">
-                                <input type="submit" value="Підтвердити">
+                        </div>
+                    </div>
+                    <div class="meme">
+                        <img class="meme-img" src="src/images/memes/toptext.jpg" alt="meme">
+                        <p class="meme-title">Top Text</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
                             </div>
-                        </form>
-                    </section>
+                        </div>
+                    </div>
+                    <div class="meme">
+                        <img class="meme-img" src="src/images/memes/cum_putin.jpg" alt="meme">
+                        <p class="meme-title">Мрія кожного українця</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meme">
+                        <img class="meme-img" src="src/images/memes/holandskiy_shturval.jpg" alt="meme">
+                        <p class="meme-title">Завжди захоплювався моряками</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meme">
+                        <video class="meme-video" controls loop>
+                            <source src="src/video/ya_juyu_jevachku.mp4">
+                        </video>
+                        <p class="meme-title">Тепер це моя улюблена пісня</p>
+                        <div class="meme-info">
+                            <a class="link-medium" href="#"><i class="fas fa-at"></i>Autor</a>
+                            <div class="meme-info-stat">
+                                <button class="btn-like"><i class="far fa-heart"></i></button> 0
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="content-item">
@@ -165,6 +212,7 @@
             </div>
         </div>
     </footer>
+    <script src="src/js/like.js"></script>
     <script src="src/js/authorization.js"></script>
     <script src="src/js/app.js"></script>
 </body>
