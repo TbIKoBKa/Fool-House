@@ -14,6 +14,13 @@ let toLogin = document.getElementById('toLogin');
 let toRegister = document.getElementById('toRegister');
 let toLogout = document.getElementById('toLogout');
 
+window.onload = (event) => {
+    if(window.localStorage.getItem('isLogged') === 'true')
+    {
+        nav.classList.toggle('logged');
+        nav.classList.toggle('notlogged');
+    }
+}
 
 login_btn.addEventListener('click', () =>
 {
@@ -55,6 +62,7 @@ toLogin.addEventListener('submit', (event) =>
     nav.classList.toggle('notlogged');
     log[0].style.display = 'none';
     dark_bg.style.display = 'none';
+    window.localStorage.setItem('isLogged', 'true');
 });
 
 toRegister.addEventListener('submit', (event) =>
@@ -64,6 +72,7 @@ toRegister.addEventListener('submit', (event) =>
     dark_bg.style.display = 'none';
     nav.classList.toggle('logged');
     nav.classList.toggle('notlogged');
+    window.localStorage.setItem('isLogged', 'true');
 });
 
 toLeave.addEventListener('click', () =>
@@ -72,6 +81,7 @@ toLeave.addEventListener('click', () =>
     dark_bg.style.display = 'none';
     nav.classList.toggle('logged');
     nav.classList.toggle('notlogged');
+    window.localStorage.setItem('isLogged', 'false');
 });
 
 toClose.addEventListener('click', () =>
