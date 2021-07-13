@@ -1,0 +1,129 @@
+@media (max-width: 1200px)
+{
+    #logo-main
+    {
+        display: none;
+    }
+
+    #logo-second
+    {
+        display: block;
+    }
+
+    #nav
+    {
+        display: none;
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        top: 0;
+        left: 0;
+        padding: 100px 20px 20px;
+        background-color: #2c2c2c;
+        z-index: 50;
+    }
+
+    #nav.active
+    {
+        display: block;
+    }
+
+    #nav a, #nav #login
+    {
+        margin: 0 0 15px 0;
+    }
+
+    .toggle
+    {
+        display: flex;
+    }
+
+    .nav-filler
+    {
+        display: block;
+    }
+
+    .content-inner-item
+    {
+        width: 48%;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .content
+    {
+        flex-wrap: wrap;
+    }
+
+    .content-item
+    {
+        border: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-item:last-child
+    {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .bestmemes img
+    {
+        height: 300px;
+    }
+
+    
+}
+
+@media (max-width: 768px)
+{
+    .trends-item
+    {
+        flex-wrap: wrap;
+    }
+
+    .trends-item-item
+    {
+        width: 100%;
+    }
+
+    .title48
+    {
+        font-size: 40px;
+    }
+
+    .bestmemes img
+    {
+        height: 200px;
+    }
+
+    .content-inner-item
+    {
+        width: 100%;
+    }
+
+    .adviceform
+    {
+        flex-wrap: wrap;
+    }
+
+    .form-item input:last-child
+    {
+        margin-bottom: 20px
+    }
+
+    .form-item
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .bestmemes img
+    {
+        height: 150px;
+    }
+}

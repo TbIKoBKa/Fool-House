@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <title>Інтернет меми</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/30a2d2d064.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="dark_bg"></div>
+    <div class="log">
+        <h1 class="title24">Авторизація</h1>
+        <div class="cross"></div>
+        <form id="toLogin">
+            <input name="login" placeholder="Логін" required>
+            <input name="password" type="password" placeholder="Пароль" required>
+            <input type="submit">    
+        </form>
+        <button id="toReg">Не маєш аккаунт?</button>
+    </div>
+
+    <div class="log">
+        <h1 class="title24">Підтвердити?</h1>
+        <div class="cross"></div>
+        <button id="toLeave" type="submit">Так</button>
+        <button id="toClose">Ні</button>
+    </div>
+
+    <div class="log">
+        <h1 class="title24">Регістрація</h1>
+        <div class="cross"></div>
+        <form id="toRegister">
+            <input name="login" placeholder="Логін" required>
+            <input name="password" type="password" placeholder="Пароль" required>
+            <input name="rep-password" type="password" placeholder="Повтор пароля" required>
+            <input name="email" type="email" placeholder="Є-пошта">
+            <input type="submit">
+        </form>
+        <button id="toLog">Вже маєш акаунт?</button>
+    </div>
+
+    <header>
+        <div id="header" class="container-main">
+            <div class="toggle">
+                <div class="toggle-item"></div>
+            </div>
+
+            <img id="logo-main" src="src/images/full-logo.svg" height=70 alt="logo">
+            <img id="logo-second" src="src/images/mini-logo.svg" height=70 alt="logo">
+
+            <nav id="nav" class="notlogged nav">
+                <a href="index.html">Головна</a>
+                <a href="news.html">Новини</a>
+                <a href="memes.html">Меми</a>
+                <a href="advice.html">Предложка</a>
+                <button id="login"><i class="fas fa-sign-in-alt"></i></button>
+                <button id="logout"><i class="fas fa-sign-out-alt"></i></button>
+            </nav>
+
+            <div class="nav-filler" style="width:50px; height: 50px;"></div>
+        </div>
+    </header>
+    
+    <main>
+        <aside id="aside-left">
+
+        </aside>
+
+        <div class="container-main">
+            <div class=content>
+                <div class="content-item">
+                    <section>
+                        <h1 class="title48">Новини</h1>
+                        <div class="content-inner">
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/adrians-kickback.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Вечірка на честь дня народження тіктокера переросла в заворушення</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/ponasenko-sing.png" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Маестро Понасенков прийшов на "Вечірній Ургант" і заспівав</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/mask-asperger.png" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Ілон Маск розповів про синдром Аспергера в Saturday Night Live</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/dzjuba-dedpul.png" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Дзюба вийшов на нагородження в костюмі Дедпула - Відео</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/el-risitas-umer.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Помер Ель Рісітас, відомий по мемам з регочучої іспанцем</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/tiktoker-stepa-zidan.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Тіктокер помер під час зйомок трюку в прямому ефірі</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/mark_zuckerberg-white.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Цукерберг розповів історію мема з білим обличчям і серфом</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/disaster-girl-meme.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Дівчинка-катастрофа продала свій мем за $ 474 тисяч</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/reeflay-6-let-kolonii.png" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Стримеру Reeflay дали 6 років колонії за смерть дівчини в прямому ефірі</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/natash-vstavaj.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Автор мема "Наташ, ми все звалили" подала заявку на реєстрацію товарного знака</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/memy-sold-grumpy_cat.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Ще чотири мема продали на кріптоаукціоне. Серед них - Grumpy Cat</a>
+                            </div>
+                            <div class="content-inner-item">
+                                <a href="news_one.html" class="link-img"><img src="src/images/news/memy-sold-trollface-deal.jpg" alt="preview_new"></a>
+                                <a href="news_one.html" class="link-medium">Меми Trollface і Deal with it продали на онлайн-аукціоні</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="content-item">
+                    <div class="bestmemes">
+                        <h1 class="title24"><i style="color: red;" class="fas fa-fire-alt"></i> Найгарячіші меми</h1>
+                        <div class="bestmemes-item">
+                            <img src="src/images/hotmemes/simpl-dimpl.png" alt="meme">
+                            <p class="bestmemes-title">Сімпл-дімпл</p>
+                        </div>
+                        <div class="bestmemes-item">
+                            <img src="src/images/hotmemes/amogus.jpg" alt="meme">
+                            <p class="bestmemes-title">Amogus</p>
+                        </div>
+                        <div class="bestmemes-item">
+                            <img src="src/images/hotmemes/azamat.png" alt="meme">
+                            <p class="bestmemes-title">Азамат Айталієв</p>
+                        </div>
+                        <div class="bestmemes-item">
+                            <img src="src/images/hotmemes/khabi-lame.jpg" alt="meme">
+                            <p class="bestmemes-title">Khabi Lame</p>
+                        </div>
+                        <div class="bestmemes-item">
+                            <img src="src/images/hotmemes/sheesh.png" alt="meme">
+                            <p class="bestmemes-title">Sheesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside id="aside-right">
+
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="container-main">
+            <p class="footer-item">FOOL HOUSE ©2021</p>
+            <div class="footer-item">
+                <a class=soclink href=#><i class="fab fa-instagram"></i></a>
+                <a class=soclink href=#><i class="fab fa-vk"></i></a>
+                <a class=soclink href=#><i class="fab fa-twitter"></i></a>
+                <a class=soclink href=#><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/js/authorization.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
